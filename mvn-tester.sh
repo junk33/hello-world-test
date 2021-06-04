@@ -6,6 +6,8 @@ cp HelloWorld.java ./hello-world-test/src/main/java/
 
 cd hello-world-test
 
+echo "============================================== mvn clean compile test --batch-mode --fail-at-end"
 mvn clean compile test --batch-mode --fail-at-end
 
+echo "============================================== mvn surefire-report:report -DshowSuccess=true"
 mvn surefire-report:report -DshowSuccess=true
