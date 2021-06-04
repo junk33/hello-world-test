@@ -10,4 +10,4 @@ echo "============================================== mvn clean compile test --ba
 mvn clean compile test --quiet --no-transfer-progress --batch-mode --fail-at-end
 
 echo "============================================== mvn surefire-report:report -DshowSuccess=true"
-mvn surefire-report:report -DshowSuccess=true
+mvn --quiet --no-transfer-progress surefire-report:report -DshowSuccess=true
