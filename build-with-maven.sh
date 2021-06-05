@@ -14,7 +14,7 @@ cd hello-world-test
 mvn clean compile test --quiet --no-transfer-progress --batch-mode --fail-never
 
 mkdir out
-echo "Hello World" out/file1.txt
+echo "Hello World" > out/file1.txt
 
 
 # java -classpath junit-4.13.2.jar:.:target/classes HelloWorld
