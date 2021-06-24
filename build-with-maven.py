@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-
+import json
 import os
 import sys
 from datetime import datetime
@@ -66,3 +66,26 @@ with open("out/report.txt", "w") as fp:
 with open("out/annotations.json", "w") as fp:
     fp.write(
         "{ \"title\": \"title for my annotation\",\n \"message\": \"my message\" }")
+
+data = {}
+data['people'] = []
+data['people'].append({
+    'name': 'Scott',
+    'website': 'stackabuse.com',
+    'from': 'Nebraska'
+})
+data['people'].append({
+    'name': 'Larry',
+    'website': 'google.com',
+    'from': 'Michigan'
+})
+data['people'].append({
+    'name': 'Tim',
+    'website': 'apple.com',
+    'from': 'Alabama'
+})
+
+with open("out/annotations.json", "w") as outfile:
+    json.dump(data, outfile)
+
+print("::warning file=README.md,line=10,col=5::From build-maven file")
