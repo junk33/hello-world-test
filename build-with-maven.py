@@ -65,4 +65,4 @@ with open("out/report.txt", "w") as fp:
 
 with open("out/annotations.json", "w") as fp:
     fp.write(
-        "[{ \"title\": \"title for my annotation\",\n \"message\": \"my message\" } ]")
+        "{ \"title\": \"title for my annotation\",\n \"message\": \"my message\" }")
