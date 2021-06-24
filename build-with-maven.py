@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import os
 import sys
 from datetime import datetime
@@ -61,3 +62,6 @@ with open("out/report.txt", "w") as fp:
     fp.write("==============================================\n")
     fp.write("Report ended on " + dt_string + "\n")
     fp.write("==============================================\n")
+
+with open("out/annotations.json", "w") as fp:
+    fp.write("[{ file: \"path/to/file.js\", line: 5, title: \"title for my annotation\", message: \"my message\", annotation_level: \"failure\" } ]")
