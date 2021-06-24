@@ -64,4 +64,5 @@ with open("out/report.txt", "w") as fp:
     fp.write("==============================================\n")
 
 with open("out/annotations.json", "w") as fp:
-    fp.write("[{ file: \"path/to/file.js\",\n line: 5,\n title: \"title for my annotation\",\n message: \"my message\",\n annotation_level: \"failure\" } ]")
+    fp.write(
+        "[{ \"title\": \"title for my annotation\",\n \"message\": \"my message\" } ]")
